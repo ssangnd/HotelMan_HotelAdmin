@@ -13,6 +13,7 @@ using HotelMan_HotelAdmin.Models;
 using Amazon.DynamoDBv2.DataModel;
 using System.Net.Sockets;
 using Amazon.DynamoDBv2;
+using Amazon.DynamoDBv2.DocumentModel;
 
 
 [assembly: LambdaSerializer(typeof(Amazon.Lambda.Serialization.SystemTextJson.DefaultLambdaJsonSerializer))]
@@ -21,6 +22,53 @@ namespace HotelMan_HotelAdmin
 {
     public class HotelAdmin
     {
+        public async Task<APIGatewayProxyResponse> ListHotels(APIGatewayProxyRequest request)
+        {
+            // query string parameter called token is passed to this lambda method.
+
+            var response = new APIGatewayProxyResponse
+            {
+                Headers = new Dictionary<string, string>(),
+                StatusCode = 200
+            };
+
+            response.Headers.Add("Access-Control-Allow-Origin", "*");
+            response.Headers.Add("Access-Control-Allow-Headers", "*");
+            response.Headers.Add("Access-Control-Allow-Methods", "OPTIONS,GET");
+            response.Headers.Add("Content-Type", "application/json");
+
+            if (request?.QueryStringParameters == null)
+            {
+                Console.WriteLine(
+                    "Query string is null. You must configure the Query String Mapping in your API resource in API Gateway");
+                return response;
+            }
+
+            var token = request.QueryStringParameters.ContainsKey("token") ? request.QueryStringParameters["token"] : "";
+            if (string.IsNullOrEmpty(token))
+            {
+                response.StatusCode = (int)HttpStatusCode.BadRequest;
+                response.Body = JsonSerializer.Serialize(new { Error = "Query parameter 'token' not present." });
+                return response;
+            }
+
+
+            var tokenDetails = new JwtSecurityToken(token);
+            var userId = tokenDetails.Claims.FirstOrDefault(x => x.Type == "sub")?.Value;
+
+            var region = Environment.GetEnvironmentVariable("AWS_REGION");
+            var dbClient = new AmazonDynamoDBClient(RegionEndpoint.GetBySystemName(region));
+            using var dbContext = new DynamoDBContext(dbClient);
+
+            var hotels = await dbContext.ScanAsync<Hotel>(new[] { new ScanCondition("UserId", ScanOperator.Equal, userId) })
+                .GetRemainingAsync();
+
+            response.Body = JsonSerializer.Serialize(new { Hotels = hotels });
+
+            return response;
+        }
+
+
         public async Task<APIGatewayProxyResponse> AddHotel(APIGatewayProxyRequest request, ILambdaContext context)
         {
             var response = new APIGatewayProxyResponse
