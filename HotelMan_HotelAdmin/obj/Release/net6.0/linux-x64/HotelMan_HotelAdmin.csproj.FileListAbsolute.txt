@@ -12,3 +12,4 @@ C:\Users\STYLVN\Desktop\DevOps\03.U\project\HotelMan_HotelAdmin\HotelMan_HotelAd
 C:\Users\STYLVN\Desktop\DevOps\03.U\project\HotelMan_HotelAdmin\HotelMan_HotelAdmin\obj\Release\net6.0\linux-x64\HotelMan_HotelAdmin.pdb
 C:\Users\STYLVN\Desktop\DevOps\03.U\project\HotelMan_HotelAdmin\HotelMan_HotelAdmin\obj\Release\net6.0\linux-x64\HotelMan_HotelAdmin.genruntimeconfig.cache
 C:\Users\STYLVN\Desktop\DevOps\03.U\project\HotelMan_HotelAdmin\HotelMan_HotelAdmin\obj\Release\net6.0\linux-x64\ref\HotelMan_HotelAdmin.dll
+C:\Users\STYLVN\Desktop\DevOps\03.U\project\HotelMan_HotelAdmin\HotelMan_HotelAdmin\obj\Release\net6.0\linux-x64\HotelMan_HotelAdmin.sourcelink.json

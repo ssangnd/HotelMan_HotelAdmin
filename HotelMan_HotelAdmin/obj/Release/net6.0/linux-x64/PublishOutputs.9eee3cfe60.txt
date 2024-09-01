@@ -5,3 +5,13 @@ C:\Users\STYLVN\Desktop\DevOps\03.U\project\HotelMan_HotelAdmin\HotelMan_HotelAd
 C:\Users\STYLVN\Desktop\DevOps\03.U\project\HotelMan_HotelAdmin\HotelMan_HotelAdmin\bin\Release\net6.0\publish\Amazon.Lambda.APIGatewayEvents.dll
 C:\Users\STYLVN\Desktop\DevOps\03.U\project\HotelMan_HotelAdmin\HotelMan_HotelAdmin\bin\Release\net6.0\publish\Amazon.Lambda.Core.dll
 C:\Users\STYLVN\Desktop\DevOps\03.U\project\HotelMan_HotelAdmin\HotelMan_HotelAdmin\bin\Release\net6.0\publish\Amazon.Lambda.Serialization.SystemTextJson.dll
+C:\Users\STYLVN\Desktop\DevOps\03.U\project\HotelMan_HotelAdmin\HotelMan_HotelAdmin\bin\Release\net6.0\publish\AWSSDK.Core.dll
+C:\Users\STYLVN\Desktop\DevOps\03.U\project\HotelMan_HotelAdmin\HotelMan_HotelAdmin\bin\Release\net6.0\publish\AWSSDK.DynamoDBv2.dll
+C:\Users\STYLVN\Desktop\DevOps\03.U\project\HotelMan_HotelAdmin\HotelMan_HotelAdmin\bin\Release\net6.0\publish\AWSSDK.S3.dll
+C:\Users\STYLVN\Desktop\DevOps\03.U\project\HotelMan_HotelAdmin\HotelMan_HotelAdmin\bin\Release\net6.0\publish\HttpMultipartParser.dll
+C:\Users\STYLVN\Desktop\DevOps\03.U\project\HotelMan_HotelAdmin\HotelMan_HotelAdmin\bin\Release\net6.0\publish\Microsoft.IdentityModel.Abstractions.dll
+C:\Users\STYLVN\Desktop\DevOps\03.U\project\HotelMan_HotelAdmin\HotelMan_HotelAdmin\bin\Release\net6.0\publish\Microsoft.IdentityModel.JsonWebTokens.dll
+C:\Users\STYLVN\Desktop\DevOps\03.U\project\HotelMan_HotelAdmin\HotelMan_HotelAdmin\bin\Release\net6.0\publish\Microsoft.IdentityModel.Logging.dll
+C:\Users\STYLVN\Desktop\DevOps\03.U\project\HotelMan_HotelAdmin\HotelMan_HotelAdmin\bin\Release\net6.0\publish\Microsoft.IdentityModel.Tokens.dll
+C:\Users\STYLVN\Desktop\DevOps\03.U\project\HotelMan_HotelAdmin\HotelMan_HotelAdmin\bin\Release\net6.0\publish\Microsoft.IO.RecyclableMemoryStream.dll
+C:\Users\STYLVN\Desktop\DevOps\03.U\project\HotelMan_HotelAdmin\HotelMan_HotelAdmin\bin\Release\net6.0\publish\System.IdentityModel.Tokens.Jwt.dll

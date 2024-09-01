@@ -9,9 +9,13 @@
     ".NETCoreApp,Version=v6.0/linux-x64": {
       "HotelMan_HotelAdmin/1.0.0": {
         "dependencies": {
+          "AWSSDK.DynamoDBv2": "3.7.400.13",
+          "AWSSDK.S3": "3.7.402.4",
           "Amazon.Lambda.APIGatewayEvents": "2.7.1",
           "Amazon.Lambda.Core": "2.2.0",
-          "Amazon.Lambda.Serialization.SystemTextJson": "2.4.3"
+          "Amazon.Lambda.Serialization.SystemTextJson": "2.4.3",
+          "HttpMultipartParser": "8.4.0",
+          "System.IdentityModel.Tokens.Jwt": "8.0.2"
         },
         "runtime": {
           "HotelMan_HotelAdmin.dll": {}
@@ -43,6 +47,110 @@
             "fileVersion": "0.0.0.0"
           }
         }
+      },
+      "AWSSDK.Core/3.7.400.13": {
+        "runtime": {
+          "lib/netcoreapp3.1/AWSSDK.Core.dll": {
+            "assemblyVersion": "3.3.0.0",
+            "fileVersion": "3.7.400.13"
+          }
+        }
+      },
+      "AWSSDK.DynamoDBv2/3.7.400.13": {
+        "dependencies": {
+          "AWSSDK.Core": "3.7.400.13"
+        },
+        "runtime": {
+          "lib/netcoreapp3.1/AWSSDK.DynamoDBv2.dll": {
+            "assemblyVersion": "3.3.0.0",
+            "fileVersion": "3.7.400.13"
+          }
+        }
+      },
+      "AWSSDK.S3/3.7.402.4": {
+        "dependencies": {
+          "AWSSDK.Core": "3.7.400.13"
+        },
+        "runtime": {
+          "lib/netcoreapp3.1/AWSSDK.S3.dll": {
+            "assemblyVersion": "3.3.0.0",
+            "fileVersion": "3.7.402.4"
+          }
+        }
+      },
+      "HttpMultipartParser/8.4.0": {
+        "dependencies": {
+          "Microsoft.IO.RecyclableMemoryStream": "3.0.0",
+          "System.Buffers": "4.5.1"
+        },
+        "runtime": {
+          "lib/net6.0/HttpMultipartParser.dll": {
+            "assemblyVersion": "8.4.0.0",
+            "fileVersion": "8.4.0.0"
+          }
+        }
+      },
+      "Microsoft.IdentityModel.Abstractions/8.0.2": {
+        "runtime": {
+          "lib/net6.0/Microsoft.IdentityModel.Abstractions.dll": {
+            "assemblyVersion": "8.0.2.0",
+            "fileVersion": "8.0.2.50822"
+          }
+        }
+      },
+      "Microsoft.IdentityModel.JsonWebTokens/8.0.2": {
+        "dependencies": {
+          "Microsoft.IdentityModel.Tokens": "8.0.2"
+        },
+        "runtime": {
+          "lib/net6.0/Microsoft.IdentityModel.JsonWebTokens.dll": {
+            "assemblyVersion": "8.0.2.0",
+            "fileVersion": "8.0.2.50822"
+          }
+        }
+      },
+      "Microsoft.IdentityModel.Logging/8.0.2": {
+        "dependencies": {
+          "Microsoft.IdentityModel.Abstractions": "8.0.2"
+        },
+        "runtime": {
+          "lib/net6.0/Microsoft.IdentityModel.Logging.dll": {
+            "assemblyVersion": "8.0.2.0",
+            "fileVersion": "8.0.2.50822"
+          }
+        }
+      },
+      "Microsoft.IdentityModel.Tokens/8.0.2": {
+        "dependencies": {
+          "Microsoft.IdentityModel.Logging": "8.0.2"
+        },
+        "runtime": {
+          "lib/net6.0/Microsoft.IdentityModel.Tokens.dll": {
+            "assemblyVersion": "8.0.2.0",
+            "fileVersion": "8.0.2.50822"
+          }
+        }
+      },
+      "Microsoft.IO.RecyclableMemoryStream/3.0.0": {
+        "runtime": {
+          "lib/net6.0/Microsoft.IO.RecyclableMemoryStream.dll": {
+            "assemblyVersion": "3.0.0.0",
+            "fileVersion": "3.0.0.0"
+          }
+        }
+      },
+      "System.Buffers/4.5.1": {},
+      "System.IdentityModel.Tokens.Jwt/8.0.2": {
+        "dependencies": {
+          "Microsoft.IdentityModel.JsonWebTokens": "8.0.2",
+          "Microsoft.IdentityModel.Tokens": "8.0.2"
+        },
+        "runtime": {
+          "lib/net6.0/System.IdentityModel.Tokens.Jwt.dll": {
+            "assemblyVersion": "8.0.2.0",
+            "fileVersion": "8.0.2.50822"
+          }
+        }
       }
     }
   },
@@ -72,6 +180,83 @@
       "sha512": "sha512-z953iA/X1APxBeYblKASZnJYRe2dIqArP+MIsEq6cF/7EI+p+8Uzh01m/NgZgvAiimWOapGplioqPKDQN9Qubw==",
       "path": "amazon.lambda.serialization.systemtextjson/2.4.3",
       "hashPath": "amazon.lambda.serialization.systemtextjson.2.4.3.nupkg.sha512"
+    },
+    "AWSSDK.Core/3.7.400.13": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-hEW5F8dMLyVRJ+LrTJVwpaOSVIsfG0Yvo2IMTDB9gxbDRzHv/iu/fzUhwNLlLuV+vel6Z3yq3AGaTFbA0Khj5w==",
+      "path": "awssdk.core/3.7.400.13",
+      "hashPath": "awssdk.core.3.7.400.13.nupkg.sha512"
+    },
+    "AWSSDK.DynamoDBv2/3.7.400.13": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-qMRyswFNMCSLgc/ytjolXjjvhPgFj/WeG0gFhAInB4/bSi0EEefV6I3Df7R0QcNgEGsFOYLejh5nDHBJIfxDSA==",
+      "path": "awssdk.dynamodbv2/3.7.400.13",
+      "hashPath": "awssdk.dynamodbv2.3.7.400.13.nupkg.sha512"
+    },
+    "AWSSDK.S3/3.7.402.4": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-wrTfbwI5At7imjk1T81Ooto1K9XfCYaazmop6hETa0mkI14eyJH0yiCeYYyDSfDgUDSmg1cNY8668OKABQFB7w==",
+      "path": "awssdk.s3/3.7.402.4",
+      "hashPath": "awssdk.s3.3.7.402.4.nupkg.sha512"
+    },
+    "HttpMultipartParser/8.4.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-vqjwG9OoObxs0+rBYoviMtuF3GyYL3uP/rx06VL1LslWidyBymlqrfb2ZlYrZRMDdNH1wB7hKmq1eJsHKvZF+w==",
+      "path": "httpmultipartparser/8.4.0",
+      "hashPath": "httpmultipartparser.8.4.0.nupkg.sha512"
+    },
+    "Microsoft.IdentityModel.Abstractions/8.0.2": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-m73Bun0l0jL8rceWZ9TMD4hwQCjDIaRT1s5RMN7TBDpXu8Ea8KcRndo45btW9gG0i/USmHLCmOBIITvTA4Y6PA==",
+      "path": "microsoft.identitymodel.abstractions/8.0.2",
+      "hashPath": "microsoft.identitymodel.abstractions.8.0.2.nupkg.sha512"
+    },
+    "Microsoft.IdentityModel.JsonWebTokens/8.0.2": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-6CVWMfXrQPMUaqlsMfG8OjtyTIKvtgiQCFOJ2YhSZo1UDaAWweVN7jGSrz59Ez0Y8lh260WE5V2b0Oe9NlVlyw==",
+      "path": "microsoft.identitymodel.jsonwebtokens/8.0.2",
+      "hashPath": "microsoft.identitymodel.jsonwebtokens.8.0.2.nupkg.sha512"
+    },
+    "Microsoft.IdentityModel.Logging/8.0.2": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-iKUyFKCQgc8rcEqyIJGLOIqqxemG7bgraqS9n5J6RPoZZH7dwxmJd3aFYmxXuAnfznJuaE1DQX5U46Cqvb+BOg==",
+      "path": "microsoft.identitymodel.logging/8.0.2",
+      "hashPath": "microsoft.identitymodel.logging.8.0.2.nupkg.sha512"
+    },
+    "Microsoft.IdentityModel.Tokens/8.0.2": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-X58KyDBpGJZcCfmSgbkxJLLxd04eMFVaJlMEbRCyWL1X44n6kMxRyK6UTS1zgi5DHikeyiZj8bi7+p0kfPepLg==",
+      "path": "microsoft.identitymodel.tokens/8.0.2",
+      "hashPath": "microsoft.identitymodel.tokens.8.0.2.nupkg.sha512"
+    },
+    "Microsoft.IO.RecyclableMemoryStream/3.0.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-irv0HuqoH8Ig5i2fO+8dmDNdFdsrO+DoQcedwIlb810qpZHBNQHZLW7C/AHBQDgLLpw2T96vmMAy/aE4Yj55Sg==",
+      "path": "microsoft.io.recyclablememorystream/3.0.0",
+      "hashPath": "microsoft.io.recyclablememorystream.3.0.0.nupkg.sha512"
+    },
+    "System.Buffers/4.5.1": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-Rw7ijyl1qqRS0YQD/WycNst8hUUMgrMH4FCn1nNm27M4VxchZ1js3fVjQaANHO5f3sN4isvP4a+Met9Y4YomAg==",
+      "path": "system.buffers/4.5.1",
+      "hashPath": "system.buffers.4.5.1.nupkg.sha512"
+    },
+    "System.IdentityModel.Tokens.Jwt/8.0.2": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-jbfANr2qEmrfEtK3L7tOnkCW5/y2YiF6ISSRhRBgIZL+W2ZbEVHFNTNV8QOKeNU6gedQnhpdU2IvB0YB3nNMjw==",
+      "path": "system.identitymodel.tokens.jwt/8.0.2",
+      "hashPath": "system.identitymodel.tokens.jwt.8.0.2.nupkg.sha512"
     }
   }
 }
