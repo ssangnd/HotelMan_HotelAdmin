@@ -15,5 +15,6 @@
   <PropertyGroup Condition=" '$(ExcludeRestorePackageImports)' != 'true' ">
     <PkgAWSSDK_Core Condition=" '$(PkgAWSSDK_Core)' == '' ">C:\Users\STYLVN\.nuget\packages\awssdk.core\3.7.400.13</PkgAWSSDK_Core>
     <PkgAWSSDK_S3 Condition=" '$(PkgAWSSDK_S3)' == '' ">C:\Users\STYLVN\.nuget\packages\awssdk.s3\3.7.402.4</PkgAWSSDK_S3>
+    <PkgAWSSDK_DynamoDBv2 Condition=" '$(PkgAWSSDK_DynamoDBv2)' == '' ">C:\Users\STYLVN\.nuget\packages\awssdk.dynamodbv2\3.7.400.13</PkgAWSSDK_DynamoDBv2>
   </PropertyGroup>
 </Project>

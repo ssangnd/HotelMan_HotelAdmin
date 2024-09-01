@@ -9,6 +9,10 @@ using System.Net;
 using System.Text;
 using System.Text.Json;
 using Amazon.S3.Model;
+using HotelMan_HotelAdmin.Models;
+using Amazon.DynamoDBv2.DataModel;
+using System.Net.Sockets;
+using Amazon.DynamoDBv2;
 
 
 [assembly: LambdaSerializer(typeof(Amazon.Lambda.Serialization.SystemTextJson.DefaultLambdaJsonSerializer))]
@@ -62,15 +66,40 @@ namespace HotelMan_HotelAdmin
             var region = Environment.GetEnvironmentVariable("AWS_REGION");
             var bucketName = Environment.GetEnvironmentVariable("bucketName");
 
-
             var client = new AmazonS3Client(RegionEndpoint.GetBySystemName(region));
-            await client.PutObjectAsync(new PutObjectRequest
+            var dbClient = new AmazonDynamoDBClient(RegionEndpoint.GetBySystemName(region));
+
+            try
             {
-                BucketName = bucketName,
-                Key = fileName,
-                InputStream = fileContentStream,
-                AutoCloseStream = true
-            });
+                await client.PutObjectAsync(new PutObjectRequest
+                {
+                    BucketName = bucketName,
+                    Key = fileName,
+                    InputStream = fileContentStream,
+                    AutoCloseStream = true
+                }); //Task<PutObjectResponse>
+
+                var hotel = new Hotel
+                {
+                    UserId = userId,
+                    Id = Guid.NewGuid().ToString(),
+                    Name = hotelName,
+                    CityName = hotelCity,
+                    Price = int.Parse(hotelPrice),
+                    Rating = int.Parse(hotelRating),
+                    FileName = fileName
+                };
+
+                using var dbContext = new DynamoDBContext(dbClient);
+                await dbContext.SaveAsync(hotel);
+
+            }
+            catch(Exception e)
+            {
+                Console.WriteLine(e);
+                throw;
+            }
+
             //var dbClient = new AmazonDynamoDBClient(RegionEndpoint.GetBySystemName(region));
             Console.WriteLine("OK.");
 

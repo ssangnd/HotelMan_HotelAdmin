@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "m8K1T4iMhhU=",
+  "dgSpecHash": "bxbw6ydOLKU=",
   "success": true,
   "projectFilePath": "C:\\Users\\STYLVN\\Desktop\\DevOps\\03.U\\project\\HotelMan_HotelAdmin\\HotelMan_HotelAdmin\\HotelMan_HotelAdmin.csproj",
   "expectedPackageFiles": [
@@ -8,6 +8,7 @@
     "C:\\Users\\STYLVN\\.nuget\\packages\\amazon.lambda.core\\2.2.0\\amazon.lambda.core.2.2.0.nupkg.sha512",
     "C:\\Users\\STYLVN\\.nuget\\packages\\amazon.lambda.serialization.systemtextjson\\2.4.3\\amazon.lambda.serialization.systemtextjson.2.4.3.nupkg.sha512",
     "C:\\Users\\STYLVN\\.nuget\\packages\\awssdk.core\\3.7.400.13\\awssdk.core.3.7.400.13.nupkg.sha512",
+    "C:\\Users\\STYLVN\\.nuget\\packages\\awssdk.dynamodbv2\\3.7.400.13\\awssdk.dynamodbv2.3.7.400.13.nupkg.sha512",
     "C:\\Users\\STYLVN\\.nuget\\packages\\awssdk.s3\\3.7.402.4\\awssdk.s3.3.7.402.4.nupkg.sha512",
     "C:\\Users\\STYLVN\\.nuget\\packages\\httpmultipartparser\\8.4.0\\httpmultipartparser.8.4.0.nupkg.sha512",
     "C:\\Users\\STYLVN\\.nuget\\packages\\microsoft.identitymodel.abstractions\\8.0.2\\microsoft.identitymodel.abstractions.8.0.2.nupkg.sha512",
