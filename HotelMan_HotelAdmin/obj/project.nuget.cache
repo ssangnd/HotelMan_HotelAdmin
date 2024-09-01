@@ -1,12 +1,22 @@
 {
   "version": 2,
-  "dgSpecHash": "lY6QIWzaUMU=",
+  "dgSpecHash": "m8K1T4iMhhU=",
   "success": true,
   "projectFilePath": "C:\\Users\\STYLVN\\Desktop\\DevOps\\03.U\\project\\HotelMan_HotelAdmin\\HotelMan_HotelAdmin\\HotelMan_HotelAdmin.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\STYLVN\\.nuget\\packages\\amazon.lambda.apigatewayevents\\2.7.1\\amazon.lambda.apigatewayevents.2.7.1.nupkg.sha512",
     "C:\\Users\\STYLVN\\.nuget\\packages\\amazon.lambda.core\\2.2.0\\amazon.lambda.core.2.2.0.nupkg.sha512",
-    "C:\\Users\\STYLVN\\.nuget\\packages\\amazon.lambda.serialization.systemtextjson\\2.4.3\\amazon.lambda.serialization.systemtextjson.2.4.3.nupkg.sha512"
+    "C:\\Users\\STYLVN\\.nuget\\packages\\amazon.lambda.serialization.systemtextjson\\2.4.3\\amazon.lambda.serialization.systemtextjson.2.4.3.nupkg.sha512",
+    "C:\\Users\\STYLVN\\.nuget\\packages\\awssdk.core\\3.7.400.13\\awssdk.core.3.7.400.13.nupkg.sha512",
+    "C:\\Users\\STYLVN\\.nuget\\packages\\awssdk.s3\\3.7.402.4\\awssdk.s3.3.7.402.4.nupkg.sha512",
+    "C:\\Users\\STYLVN\\.nuget\\packages\\httpmultipartparser\\8.4.0\\httpmultipartparser.8.4.0.nupkg.sha512",
+    "C:\\Users\\STYLVN\\.nuget\\packages\\microsoft.identitymodel.abstractions\\8.0.2\\microsoft.identitymodel.abstractions.8.0.2.nupkg.sha512",
+    "C:\\Users\\STYLVN\\.nuget\\packages\\microsoft.identitymodel.jsonwebtokens\\8.0.2\\microsoft.identitymodel.jsonwebtokens.8.0.2.nupkg.sha512",
+    "C:\\Users\\STYLVN\\.nuget\\packages\\microsoft.identitymodel.logging\\8.0.2\\microsoft.identitymodel.logging.8.0.2.nupkg.sha512",
+    "C:\\Users\\STYLVN\\.nuget\\packages\\microsoft.identitymodel.tokens\\8.0.2\\microsoft.identitymodel.tokens.8.0.2.nupkg.sha512",
+    "C:\\Users\\STYLVN\\.nuget\\packages\\microsoft.io.recyclablememorystream\\3.0.0\\microsoft.io.recyclablememorystream.3.0.0.nupkg.sha512",
+    "C:\\Users\\STYLVN\\.nuget\\packages\\system.buffers\\4.5.1\\system.buffers.4.5.1.nupkg.sha512",
+    "C:\\Users\\STYLVN\\.nuget\\packages\\system.identitymodel.tokens.jwt\\8.0.2\\system.identitymodel.tokens.jwt.8.0.2.nupkg.sha512"
   ],
   "logs": []
 }
