@@ -1,0 +1,12 @@
+C:\Users\STYLVN\Desktop\DevOps\03.U\project\HotelMan_HotelAdmin\HotelMan_HotelAdmin\bin\Debug\net6.0\HotelMan_HotelAdmin.deps.json
+C:\Users\STYLVN\Desktop\DevOps\03.U\project\HotelMan_HotelAdmin\HotelMan_HotelAdmin\bin\Debug\net6.0\HotelMan_HotelAdmin.dll
+C:\Users\STYLVN\Desktop\DevOps\03.U\project\HotelMan_HotelAdmin\HotelMan_HotelAdmin\bin\Debug\net6.0\HotelMan_HotelAdmin.pdb
+C:\Users\STYLVN\Desktop\DevOps\03.U\project\HotelMan_HotelAdmin\HotelMan_HotelAdmin\obj\Debug\net6.0\HotelMan_HotelAdmin.csproj.AssemblyReference.cache
+C:\Users\STYLVN\Desktop\DevOps\03.U\project\HotelMan_HotelAdmin\HotelMan_HotelAdmin\obj\Debug\net6.0\HotelMan_HotelAdmin.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\STYLVN\Desktop\DevOps\03.U\project\HotelMan_HotelAdmin\HotelMan_HotelAdmin\obj\Debug\net6.0\HotelMan_HotelAdmin.AssemblyInfoInputs.cache
+C:\Users\STYLVN\Desktop\DevOps\03.U\project\HotelMan_HotelAdmin\HotelMan_HotelAdmin\obj\Debug\net6.0\HotelMan_HotelAdmin.AssemblyInfo.cs
+C:\Users\STYLVN\Desktop\DevOps\03.U\project\HotelMan_HotelAdmin\HotelMan_HotelAdmin\obj\Debug\net6.0\HotelMan_HotelAdmin.csproj.CoreCompileInputs.cache
+C:\Users\STYLVN\Desktop\DevOps\03.U\project\HotelMan_HotelAdmin\HotelMan_HotelAdmin\obj\Debug\net6.0\HotelMan_HotelAdmin.dll
+C:\Users\STYLVN\Desktop\DevOps\03.U\project\HotelMan_HotelAdmin\HotelMan_HotelAdmin\obj\Debug\net6.0\refint\HotelMan_HotelAdmin.dll
+C:\Users\STYLVN\Desktop\DevOps\03.U\project\HotelMan_HotelAdmin\HotelMan_HotelAdmin\obj\Debug\net6.0\HotelMan_HotelAdmin.pdb
+C:\Users\STYLVN\Desktop\DevOps\03.U\project\HotelMan_HotelAdmin\HotelMan_HotelAdmin\obj\Debug\net6.0\ref\HotelMan_HotelAdmin.dll
